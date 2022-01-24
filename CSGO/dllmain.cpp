@@ -19,7 +19,7 @@ uintptr_t dwForceAttack = 0x3200FC4;
 */
 int  main()
 {
-    PlaySound(TEXT("C:\\Users\\zacka\\Music\\copypasta.wav"), NULL, SND_FILENAME | SND_ASYNC);
+
     FILE* fnull;
     AllocConsole();
     freopen_s(&fnull, "CONOUT$", "w", stdout);
@@ -27,27 +27,7 @@ int  main()
 
     HANDLE p = GetCurrentProcess();
   
-    STARTUPINFOA si;
-    PROCESS_INFORMATION pi;
 
-    // set the size of the structures
-    ZeroMemory(&si, sizeof(si));
-    si.cb = sizeof(si);
-    ZeroMemory(&pi, sizeof(pi));
-
-    // start the program up
-    CreateProcessA("C:\\Users\\zacka\\source\\repos\\LegitOverlayx3\\x64\\Release\\LegitOverlayx3.exe",   // the path
-        NULL,        // Command line
-        NULL,           // Process handle not inheritable
-        NULL,           // Thread handle not inheritable
-        FALSE,          // Set handle inheritance to FALSE
-        0,              // No creation flags
-        NULL,           // Use parent's environment block
-        NULL,           // Use parent's starting directory 
-        &si,            // Pointer to STARTUPINFO structure
-        &pi             // Pointer to PROCESS_INFORMATION structure (removed extra parentheses)
-    );
-    
 
  
 
