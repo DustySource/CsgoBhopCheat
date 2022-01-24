@@ -1,6 +1,0 @@
-﻿  pch.cpp
-  CSGO.cpp
-  dllmain.cpp
-C:\Users\zacka\source\repos\CSGO\CSGO\dllmain.cpp(11,75): error C2664: 'HMODULE GetModuleHandleW(LPCWSTR)': cannot convert argument 1 from 'const char [20]' to 'LPCWSTR'
-C:\Users\zacka\source\repos\CSGO\CSGO\dllmain.cpp(11,54): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\libloaderapi.h(269,1): message : see declaration of 'GetModuleHandleW'
